@@ -1,0 +1,26 @@
+{
+  "name": "koajs2",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel app.js -d dist --presets env",
+    "dev": "babel-node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
+  },
+  "dependencies": {
+    "kcors": "^2.2.1",
+    "koa": "^2.3.0",
+    "koa-body-parser": "^1.1.2",
+    "koa-logger": "^3.0.1",
+    "koa-mongoose": "^2.0.0",
+    "koa-router": "^7.2.1"
+  }
+}
