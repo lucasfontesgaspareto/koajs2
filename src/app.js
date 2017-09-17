@@ -5,7 +5,7 @@ import bodyParser from 'koa-body-parser'
 import logger from 'koa-logger'
 import cors from 'kcors'
 
-import routers from './src'
+import routers from './routes'
 
 const app = new Koa()
 const router = new Router()
@@ -29,6 +29,4 @@ routers(app, router)
 app.use(router.routes())
 app.use(router.allowedMethods())
 
-app.listen(3000, () => {
-  console.log('server connected')
-})
+export default app

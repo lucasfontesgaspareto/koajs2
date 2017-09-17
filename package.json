@@ -5,17 +5,19 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel app.js -d dist --presets env",
-    "dev": "babel-node app.js"
+    "build": "babel ./src -d dist --presets env",
+    "dev": "babel-node ./src/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.0"
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2017": "^6.24.1"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "kcors": "^2.2.1",
     "koa": "^2.3.0",
     "koa-body-parser": "^1.1.2",
