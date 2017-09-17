@@ -1,8 +1,9 @@
 import Post from './../../models/Post'
 
 export default async (ctx) => {
+  let posts = {}
   try {
-    let posts = await Post.find({})
+    posts = await Post.find({})
   } catch (e) {
     throw new Error(e)
   }

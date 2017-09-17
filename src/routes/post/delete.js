@@ -1,8 +1,9 @@
 import Post from './../../models/Post'
 
 export default async (ctx) => {
+  let post = {}
   try {
-    let post = await Post.findByIdAndRemove(ctx.params.id)
+    post = await Post.findByIdAndRemove(ctx.params.id)
   } catch (e) {
     throw new Error(e)
   }

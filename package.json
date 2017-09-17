@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --verbose",
     "build": "babel ./src -d dist --presets env",
     "dev": "babel-node ./src/app.js"
   },
@@ -13,8 +13,12 @@
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-jest": "^21.0.2",
     "babel-preset-env": "^1.6.0",
-    "babel-preset-es2017": "^6.24.1"
+    "babel-preset-es2017": "^6.24.1",
+    "jest": "^21.1.0",
+    "superagent": "^3.6.0",
+    "supertest": "^3.0.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",

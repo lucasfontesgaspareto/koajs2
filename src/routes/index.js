@@ -11,7 +11,6 @@ export default (app, router) => {
     .get('/posts', post)
     .get('/post/:query', postShow)
     .post('/post', postCreate)
-    .put('/post/:id', postEdit)
     .patch('/post/:id', postEdit)
     .del('/post/:id', postDelete)
 }
